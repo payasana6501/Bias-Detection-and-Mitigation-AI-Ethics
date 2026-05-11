@@ -23,7 +23,7 @@ This project designs IDOOU's budget predictor model, evaluates its fairness, and
 
 ## Project Steps
 
-![Project Steps](overview/steps.jpg)
+![Project Steps](steps.jpg)
 
 1. **Data Pre-processing** — NaN analysis, binning, one-hot encoding, bias evaluation
 2. **ML Model Investigation** — Gaussian Naive Bayes and Logistic Regression with fairness metrics
@@ -54,7 +54,7 @@ submission/
 ├── cohort_analysis.png                   # Accuracy cohort by education level
 └── fairness_cohort_analysis.png          # TPR/FPR cohort by education level
 data/
-└── udacity_ai_ethics_project_data.csv    # Synthetic dataset (300K users)
+└── ai_ethics_project_data.csv            # Synthetic dataset (300K users)
 steps.jpg
 requirements.txt
 ```
