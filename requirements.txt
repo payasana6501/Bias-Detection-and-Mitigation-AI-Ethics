@@ -1,0 +1,10 @@
+matplotlib
+ipykernel
+pandas
+scikit-learn
+aif360
+tensorflow
+jinja2
+fairlearn
+seaborn
+aif360[inFairness]
