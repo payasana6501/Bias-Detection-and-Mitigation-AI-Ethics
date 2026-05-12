@@ -38,7 +38,7 @@ This project designs IDOOU's budget predictor model, evaluates its fairness, and
 
 - Education level and age are near-perfect predictors of budget (Cramér's V: 0.98 and 0.97)
 - Before mitigation: Equal Opportunity Difference = -1.0 (HS Grads with high budget were never correctly predicted)
-- After Reweighing: Equal Opportunity Difference = 0.0, Balanced Accuracy = 98.24%
+- After Reweighing: Equal Opportunity Difference = 0.0, Balanced Accuracy = 98.37%
 
 ---
 
@@ -47,7 +47,15 @@ This project designs IDOOU's budget predictor model, evaluates its fairness, and
 ```
 submission/
 ├── AI Ethics Project -- STARTER.ipynb   # Main notebook
-├── model_card.html                       # Generated model card
+└── model_card.html                       # Generated model card
+Theory/
+├── 1_DataPreporcessingAndEval.md         # Step 1 — data cleaning, bias evaluation, Cramér's V
+├── 2_InvestigateMLModel.md              # Step 2 — GNB vs LR, fairness metrics, accuracy paradox
+├── 3_InterpretabilityAndMitigation.md   # Steps 4+5 — permutation importance, Reweighing
+└── 4_EthicalImplications.md             # Step 6 — harms, HITL, business consequences
+tables_plots/
+├── nan_analysis.png                      # NaN distribution across demographic groups
+├── cramers_v_heatmap.png                 # Cramér's V association matrix
 ├── pipeline_diagram.png                  # End-to-end pipeline diagram
 ├── rw_confusion_matrix.png               # Confusion matrix (post-mitigation)
 ├── rw_feature_importance.png             # Permutation importance (post-mitigation)
